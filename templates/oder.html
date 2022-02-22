@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h1 style="text-align:center;font-family:verdana;">商家列表</h1><br>
+{% for issue in form %}
+    <img src="{{ issue[4] }}" width="80px" height="80px" style="float:left" ><br>
+    商家名称：{{ issue[0] }}<br>
+    商家类型：{{ issue[1] }}<br>
+    商品描述：{{ issue[2] }}<br>
+    <a href="{{ url_for('shop_detail',id = issue[3]) }}">进入商家</a><br>
+{% endfor %}
+
+</body>
+</html>

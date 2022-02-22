@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商家主页</title>
+</head>
+<body>
+<h1 style="text-align:center;">店铺详情</h1>
+<<img src="{{ form[4] }}" width="100px" height="100px" style="float:left" >
+<p>店铺名称：{{ form[0]}}</p>
+<p>店铺类型：{{ form[1]}}</p>
+<p>店铺描述：{{ form[2]}}</p>
+<p>个人账号：{{ form[3]}}</p><br>
+<h1 style="text-align:center;">餐品</h1><br>
+
+{% for issue in form1 %}
+    <img src="{{ issue[3] }}" width="50px" height="50px" style="float:left" >
+    商品名称：{{ issue[0] }}<br>
+    商品价格：{{ issue[1] }}<br>
+    商品描述：{{ issue[2] }}<br>
+{% endfor %}
+{% if type == '0' %}
+<form method="post">
+    <input type="submit" value="提交订单">
+    <p>点餐部分不大会搞  可以先点着玩玩</p>
+</form>
+{% endif %}
+</body>
+</html>

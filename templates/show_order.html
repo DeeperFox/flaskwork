@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+</head>
+<body>
+<h1 style="text-align:center;font-family:verdana;">我的订单</h1><br><br>
+{% for i in form %}
+    <p>--------------------------</p>
+<p>下单时间：{{ i[0] }}</p>
+<p>下单人：{{ i[1] }}</p>
+<p>住址：{{ i[2] }}</p>
+<p>订单店铺：{{ i[3] }}</p>
+<p>订单内容：{{ i[4] }}</p>
+<p>订单状态：{{ i[5] }}</p>
+<p>接单时间：{{ i[6] }}</p>
+<p>送达时间：{{ i[7] }}</p>
+    <p>骑手：{{ i[8] }}</p>
+{%endfor%}
+</body>
+</html>

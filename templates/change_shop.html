@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑商家信息</title>
+</head>
+<body>
+<h1 style="text-align:center;font-family:verdana;">编辑商家信息</h1><br><br>
+<form enctype='multipart/form-data' method="post">
+    <label>商家名称</label>
+    <input type="text" name="shopname" placeholder="店名"><br>
+    <label>商家描述</label>
+    <input type="text" name="describtion" placeholder="随便搞点"><br>
+    <label for="exampleInputEmail1">商家类型</label>
+            <select style="width: 300px; height:30px;" name="type" >
+            <option value="0">小吃</option>
+            <option value="1">甜点饮品</option>
+            <option value="2">正餐</option>
+            </select><br>
+    <p>店铺图片：</p>
+    <input type="file" size="30" name="file"/><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

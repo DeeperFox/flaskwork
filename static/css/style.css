@@ -1,0 +1,68 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .w{
+        width:1200px;
+        margin: auto;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decroation: none;
+    }
+    .header{
+        height: 42px;
+        margin:30px auto;
+    }
+    .logo{
+        float: left;
+        width: 198px;
+        height: 42px;
+    }
+    .nav{
+        float: left;
+        margin-left: 60px;
+    }
+    .nav ul li{
+        float: left;
+        margin: 0 15px;
+    }
+    .nave ul li a{
+        display: block;
+        height: 42px;
+        padding: 0 10px;
+        line-height: 42px;
+        color: black;
+    }
+    .nave ul li a:hover{
+        border-bottom: 2px solid #00a4ff;
+    }
+    .search{
+        float: left;
+        width: 412px;
+        height: 42px;
+        background-color: #00a4ff;
+        margin-left: 50px;
+    }
+    .search input{
+        float: left;
+        width: 345px;
+        height: 40px;
+        border: 1px solid #00a4ff;
+        border-right: 0;
+        color: #bfbfbf;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .search button{
+        float: left;
+        width: 50px;
+        height: 42px;
+    /* 去掉按钮默认边框 */
+        border: 0;
+        background: url(/static/img/green.jpg);}
+    .user{
+        float: left;
+    }

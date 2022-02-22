@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<h1 style="text-align:center;font-family:verdana;">个人中心</h1><br><br>
+<p>用户名:{{ accountname }}</p>
+<p>密码:{{ password }}</p>
+<a href="http://127.0.0.1:5000/user/changePW">修改密码</a>
+<p>用户类型:{{ type }}</p>
+<a href="http://127.0.0.1:5000/shop/changeshop">编辑商家信息</a><br><br>
+<a href="{{ url_for('shop_detail',id = accountname) }}">商家主页</a><br><br>
+<a href="http://127.0.0.1:5000/shop/detail/uplord">上传新商品</a>
+</body>
+</html>
